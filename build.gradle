@@ -1,6 +1,15 @@
 
 apply plugin: 'java'
+apply plugin: 'idea'
 
 version = '1.0.0-SNAPSHOT'
 group = 'com.moowork.elasticsearch'
 
+dependencies {
+	compile 'com.hazelcast:hazelcast:2.3.1@jar'
+	compile 'org.elasticsearch:elasticsearch:0.19.10@jar'
+}
+
+repositories {
+	mavenCentral()
+}
